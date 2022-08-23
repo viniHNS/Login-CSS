@@ -42,7 +42,4 @@ function changeLoginToSign(){
     document.querySelector(".join").style.display = "none"
 }
 
-function haveText(){
-    
-}
 
