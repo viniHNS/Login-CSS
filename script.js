@@ -1,3 +1,9 @@
+const email = []
+const password = []
+const firstName = []
+const lastName = []
+let count = 0;
+
 function changeSignToLogin(){
 
     signUp = document.querySelector(".btn-sign")
@@ -10,10 +16,10 @@ function changeSignToLogin(){
     signUp.style.backgroundColor = "#6d6d6d"
     
     document.querySelector(".social-login").style.display = "none"
-    document.querySelector("h3").innerHTML = "Login"
+    document.querySelector(".btn-confirm .signin").style.display = "none"
+    document.querySelector(".btn-confirm .login").style.display = "block"
     document.querySelector(".or").style.display = "none"
     document.querySelector(".sign-in-box").style.display = "none"
-    document.querySelector(".btn-confirm button").innerHTML = "Login" 
     join.style.display = "grid"
     document.querySelector("h3").style.marginBottom = "1rem"
     document.querySelector("h3").style.marginBottom = "1rem"
@@ -35,11 +41,82 @@ function changeLoginToSign(){
     signUp.style.backgroundColor = "#1f1f1f"
 
     document.querySelector(".social-login").style.display = "grid"
-    document.querySelector("h3").innerHTML = "Sign up"
+    document.querySelector(".btn-confirm .signin").style.display = "block"
+    document.querySelector(".btn-confirm .login").style.display = "none"
     document.querySelector(".or").style.display = "flex"
     document.querySelector(".sign-in-box").style.display = "grid"
-    document.querySelector(".btn-confirm button").innerHTML = "Sign up" 
     document.querySelector(".join").style.display = "none"
+}
+
+function logIn(){
+    emailInput = document.querySelector(".join .email-input").value
+    passwordInput = document.querySelector(".join .password-input").value
+
+    if (emailInput == ""){
+        document.querySelector(".join .email-input").style.border = "1px solid #bb1b1b"
+    }
+    
+    if (passwordInput == ""){
+
+        document.querySelector(".join .password-input").style.border = "1px solid #bb1b1b"
+    }
+
+    if (emailInput != ""){
+        document.querySelector(".join .email-input").style.border = "1px solid #000000"
+    }
+    
+    if (passwordInput != ""){
+        document.querySelector(".join .password-input").style.border = "1px solid #000000"
+    }
+
+    if (passwordInput != "" && emailInput != "" ){
+        document.querySelector(".join .email-input").style.border = "1px solid #000000"
+        document.querySelector(".join .password-input").style.border = "1px solid #000000"
+    }
+
+}
+
+function createUser(){
+    
+    emailInput1 = document.querySelector(".sign-in-box .email-input").value
+    passwordInput1 = document.querySelector(".sign-in-box .password-input").value
+    firstNameInput1 = document.querySelector(".sign-in-box .first-name").value
+    lastNameInput1 = document.querySelector(".sign-in-box .last-name").value
+
+    if (firstNameInput1 == "") {
+        document.querySelector(".sign-in-box .first-name ").style.border = "1px solid #bb1b1b"
+    }
+    else{
+        document.querySelector(".sign-in-box .first-name").style.border = "1px solid #000000"
+    }
+
+    if (lastNameInput1 == "") {
+        document.querySelector(".sign-in-box .last-name ").style.border = "1px solid #bb1b1b"
+    }
+    else{
+        document.querySelector(".sign-in-box .last-name").style.border = "1px solid #000000"
+    }
+
+    if (emailInput1 == "") {
+        document.querySelector(".sign-in-box .email-input ").style.border = "1px solid #bb1b1b"
+    }
+    else{
+        document.querySelector(".sign-in-box .email-input").style.border = "1px solid #000000"
+    }
+
+    if (passwordInput1 == "") {
+        document.querySelector(".sign-in-box .password-input ").style.border = "1px solid #bb1b1b"
+    }
+    else{
+        document.querySelector(".sign-in-box .password-input").style.border = "1px solid #000000"
+    }
+
+    
+
+
+
+
+    
 }
 
 
