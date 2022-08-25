@@ -110,13 +110,6 @@ function createUser(){
     else{
         document.querySelector(".sign-in-box .password-input").style.border = "1px solid #000000"
     }
-
-    
-
-
-
-
-    
 }
 
 
