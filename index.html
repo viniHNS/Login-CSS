@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/62c44247f4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="choose">
+            <button class="btn-sign" type="button" onclick="changeLoginToSign()">Sign Up</button>
+            <button class="btn-login" type="button" onclick="changeSignToLogin()">Log in</button>
+        </div>
+
+        <h3 style="font-weight:normal; text-align: center; margin-bottom: 2rem;">Sign up</h3>
+
+        <div class="social-login">
+            <button class="btn-facebook" type="button"><i class="fa-brands fa-facebook"></i> Sign up with Facebook</button>
+            <button class="btn-google" type="button"><i class="fa-brands fa-google"></i> Sign up with Google</button>
+        </div>
+
+        <div class="or">
+            <span class="line"></span>
+            <p>OR</p>
+            <span class="line"></span>
+        </div>
+
+        <div class="sign-in-box">
+            <p style="margin: 0;">First Name</p>
+            <p>Last Name</p>
+            <input class="first-name" type="text">
+            <input class="last-name" type="text">
+            <p style="margin-top: 6px;">Email adress</p>
+            <span></span>
+            <input class="email-input" type="text">
+            <p style="margin-top: 6px;">Passaword</p>
+            <span></span>
+            <input class="password-input" type="password">
+        </div>
+
+        <div class="join">
+            <p>Email adress</p>
+            <input class="email-input" type="text">
+            <p>Password</p>
+            <input class="password-input" style="padding: 6px;border: 1px solid rgb(0, 0, 0);border-radius: 8px;" type="text">
+
+        </div>
+
+        <div class="btn-confirm">
+            <button class="signin" style="font-size: 16px;" type="button" onclick="createUser()">Sign up</button>
+            <button class="login" style="font-size: 16px; display: none;" type="button" onclick="logIn()">Login</button>
+        </div>
+
+    </div>
+    
+</body>
+</html>
